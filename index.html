@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kost Pondok ashoka - Hunian Nyaman Dekat Kampus</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f8fafc; color: #334155; line-height: 1.6; }
+        
+        /* HEADER & BANNER */
+        header { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800') center/cover; color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 28px; margin-bottom: 10px; color: #38bdf8; }
+        header p { font-size: 16px; max-width: 600px; margin: 0 auto 20px; }
+        .badge { background: #eab308; color: #0f172a; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 12px; display: inline-block; margin-bottom: 10px; }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+
+        /* KARTU INFORMASI */
+        .card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .card h2 { font-size: 20px; color: #0f172a; margin-bottom: 12px; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; }
+
+        /* FASILITAS GRID */
+        .facilities { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .facility-item { background: #f1f5f9; padding: 10px; border-radius: 8px; font-size: 14px; text-align: center; }
+
+        /* HARGA & KONTAK */
+        .price-tag { font-size: 24px; font-weight: bold; color: #16a34a; margin: 10px 0; }
+        .btn-wa { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 16px; margin-top: 15px; }
+
+        footer { text-align: center; padding: 20px; font-size: 12px; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="badge">Social Project yang di buat oleh kelompok c++
+        mentor : hiro faletehan
+        anggota :Icad,
+          Alpi,
+Ashifa,
+Cepti,
+Ihsan,
+Putri,
+Reyhan,
+Nabil,
+Rayyan dan
+Yoga</span>
+        <h1>Kost Pondok ashoka</h1>
+        <p>Hunian Nyaman, Aman, dan Strategis (Hanya 15 Menit dari Gerbang Utama Kampus)</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- HARGA & SEWA -->
+        <div class="card" style="text-align: center;">
+            <h2>Harga Sewa</h2>
+            <div class="price-tag">Rp 8.500.000 <span style="font-size: 14px; color: #64748b;">/ tahun</span></div>
+            <p style="font-size: 13px; color: #64748b;">*Sudah termasuk air dan listrik standar</p>
+        </div>
+
+        <!-- FASILITAS -->
+        <div class="card">
+            <h2>Fasilitas Kosan</h2>
+            <div class="facilities">
+                <div class="facility-item">🛏️ Kamar Isian (Kasur & rak buku)</div>
+                <div class="facility-item">📶 WiFi 24 Jam</div>
+                <div class="facility-item">🚿 Kamar Mandi Dalam</div>
+                <div class="facility-item">🛵 Parkiran Motor Luas</div>
+                <div class="facility-item">🍳 Dapur Bersama</div>
+                <div class="facility-item">🔑 Akses Gerbang sampai jam 9</div>
+            </div>
+        </div>
+
+        <!-- LOKASI & LINGKUNGAN -->
+        <div class="card">
+            <h2>Lokasi & Keunggulan</h2>
+            <p>📍 <strong>Alamat:</strong>Pondok Ashoka, jl. Pd. Hijau, No. 40, Jl. Permai V No.Atas, Cipadung, Cibiru, Bandung City, West Java 40614 </p>
+            <ul style="margin-left: 20px; margin-top: 10px; font-size: 14px;">
+                <li>Dekat dengan warung makan murah & minimarket.</li>
+                <li>Lingkungan tenang, aman, dan cocok untuk fokus belajar.</li>
+                <li>Pengelola responsif.</li>
+            </ul>
+        </div>
+
+        <!-- TOMBOL AKSI UTAMA -->
+        <div class="card">
+            <h2>Tertarik atau Ingin Survey?</h2>
+            <p style="font-size: 14px;">Hubungi pengelola kosan langsung via WhatsApp untuk ketersediaan kamar:</p>
+            <!-- Ganti nomor HP di bawah dengan nomor pengelola/bapak kos (format: 628xxx) -->
+            <a href="https://wa.me/6285147618624?text=Halo%20Pengelola%20Kost,%20saya%20tertarik%20dengan%20kamar%20kosan%20dari%20website" class="btn-wa" target="_blank">📲 Chat Pengelola via WhatsApp</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Proyek Sosial Pemberdayaan Ekonomi Masyarakat Sekitar Kampus &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
