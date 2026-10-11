@@ -9,7 +9,7 @@
         body { background-color: #f8fafc; color: #334155; line-height: 1.6; }
         
         /* HEADER & BANNER */
-        header { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800') center/cover; color: white; padding: 60px 20px; text-align: center; }
+        header { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('1000178553.jpg') center/cover; color: white; padding: 60px 20px; text-align: center; }
         header h1 { font-size: 28px; margin-bottom: 10px; color: #38bdf8; }
         header p { font-size: 16px; max-width: 600px; margin: 0 auto 20px; }
         .badge { background: #eab308; color: #0f172a; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 12px; display: inline-block; margin-bottom: 10px; }
@@ -24,6 +24,40 @@
         .facilities { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
         .facility-item { background: #f1f5f9; padding: 10px; border-radius: 8px; font-size: 14px; text-align: center; }
 
+        /* GALERI FOTO */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .gallery-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item .caption {
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #1e293b;
+            text-align: center;
+            background: #f8fafc;
+        }
+
         /* HARGA & KONTAK */
         .price-tag { font-size: 24px; font-weight: bold; color: #16a34a; margin: 10px 0; }
         .btn-wa { display: block; width: 100%; background: #25d366; color: white; text-align: center; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 16px; margin-top: 15px; }
@@ -36,16 +70,7 @@
     <header>
         <span class="badge">Social Project yang di buat oleh kelompok c++
         mentor : hiro faletehan
-        anggota :Icad,
-          Alpi,
-Ashifa,
-Cepti,
-Ihsan,
-Putri,
-Reyhan,
-Nabil,
-Rayyan dan
-Yoga</span>
+        anggota : Icad, Alpi, Ashifa, Cepti, Ihsan, Putri, Reyhan, Nabil, Rayyan dan Yoga</span>
         <h1>Kost Pondok ashoka</h1>
         <p>Hunian Nyaman, Aman, dan Strategis (Hanya 15 Menit dari Gerbang Utama Kampus)</p>
     </header>
@@ -72,10 +97,57 @@ Yoga</span>
             </div>
         </div>
 
+        <!-- GALERI FOTO KOST -->
+        <div class="card">
+            <h2>Galeri Foto Kost</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="IMG-20261010-WA0037.jpg" alt="Tampak Depan Kost">
+                    <div class="caption">Depan Kost & Gerbang Utama</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178532.jpg" alt="Parkiran Motor">
+                    <div class="caption">Parkiran Motor Luas</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178556.jpg" alt="Kamar Tidur">
+                    <div class="caption">Kamar Tidur (Isian Kasur)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178561.jpg" alt="Interior Kamar & Rak">
+                    <div class="caption">Interior Kamar & Rak Dinding</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178562.jpg" alt="Kamar Mandi Dalam">
+                    <div class="caption">Kamar Mandi Dalam & Shower</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178554.jpg" alt="Dapur Bersama">
+                    <div class="caption">Dapur Bersama</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178546.jpg" alt="Lantai 2 & Selasar">
+                    <div class="caption">Area Selasar Lantai 2</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178555.jpg" alt="Tangga Lantai 2">
+                    <div class="caption">Akses Tangga Lantai 2</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178559.jpg" alt="Area Jemuran">
+                    <div class="caption">Area Jemuran Pakaian</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000178560.jpg" alt="Jemuran Luar">
+                    <div class="caption">Fasilitas Jemuran Luar</div>
+                </div>
+            </div>
+        </div>
+
         <!-- LOKASI & LINGKUNGAN -->
         <div class="card">
             <h2>Lokasi & Keunggulan</h2>
-            <p>📍 <strong>Alamat:</strong>Pondok Ashoka, jl. Pd. Hijau, No. 40, Jl. Permai V No.Atas, Cipadung, Cibiru, Bandung City, West Java 40614 </p>
+            <p>📍 <strong>Alamat:</strong> Pondok Ashoka, jl. Pd. Hijau, No. 40, Jl. Permai V No.Atas, Cipadung, Cibiru, Bandung City, West Java 40614 </p>
             <ul style="margin-left: 20px; margin-top: 10px; font-size: 14px;">
                 <li>Dekat dengan warung makan murah & minimarket.</li>
                 <li>Lingkungan tenang, aman, dan cocok untuk fokus belajar.</li>
@@ -87,7 +159,6 @@ Yoga</span>
         <div class="card">
             <h2>Tertarik atau Ingin Survey?</h2>
             <p style="font-size: 14px;">Hubungi pengelola kosan langsung via WhatsApp untuk ketersediaan kamar:</p>
-            <!-- Ganti nomor HP di bawah dengan nomor pengelola/bapak kos (format: 628xxx) -->
             <a href="https://wa.me/6285147618624?text=Halo%20Pengelola%20Kost,%20saya%20tertarik%20dengan%20kamar%20kosan%20dari%20website" class="btn-wa" target="_blank">📲 Chat Pengelola via WhatsApp</a>
         </div>
 
