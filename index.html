@@ -4,17 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kost Pondok ashoka - Hunian Nyaman Dekat Kampus</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
         body { background-color: #f8fafc; color: #334155; line-height: 1.6; }
         
-        /* HEADER & BANNER */
-        header { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('1000178553.jpg') center/cover; color: white; padding: 60px 20px; text-align: center; }
-        header h1 { font-size: 28px; margin-bottom: 10px; color: #38bdf8; }
-        header p { font-size: 16px; max-width: 600px; margin: 0 auto 20px; }
-        .badge { background: #eab308; color: #0f172a; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 12px; display: inline-block; margin-bottom: 10px; }
+        /* HEADER DENGAN BACKGROUND FOTO DRONE NEW */
+        header { 
+            position: relative;
+            background: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)), url('1000179078.jpg') center/cover no-repeat; 
+            color: white; 
+            padding: 80px 20px; 
+            text-align: center; 
+            border-radius: 0 0 16px 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
 
-        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+        .hero-overlay {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        header h1 { 
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 32px; 
+            margin-bottom: 12px; 
+            color: #ffffff; 
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+        }
+
+        header p { 
+            font-size: 15px; 
+            font-weight: 300;
+            color: #f1f5f9;
+            max-width: 600px; 
+            margin: 0 auto; 
+            line-height: 1.5;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        }
+
+        /* CATATAN KELOMPOK DI BAWAH FOTO BACKGROUND */
+        .project-info-container {
+            max-width: 800px;
+            margin: 20px auto 10px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .badge-info { 
+            background: #ffffff; 
+            color: #475569; 
+            border: 1px solid #e2e8f0;
+            padding: 10px 16px; 
+            border-radius: 8px; 
+            font-weight: 400; 
+            font-size: 12px; 
+            display: inline-block; 
+            line-height: 1.5;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 10px 20px 30px 20px; }
 
         /* KARTU INFORMASI */
         .card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
@@ -67,13 +123,21 @@
 </head>
 <body>
 
+    <!-- HEADER BANNER DENGAN BACKGROUND FOTO DRONE -->
     <header>
-        <span class="badge">Social Project yang di buat oleh kelompok c++
-        mentor : hiro faletehan
-        anggota : Icad, Alpi, Ashifa, Cepti, Ihsan, Putri, Reyhan, Nabil, Rayyan dan Yoga</span>
-        <h1>Kost Pondok ashoka</h1>
-        <p>Hunian Nyaman, Aman, dan Strategis (Hanya 15 Menit dari Gerbang Utama Kampus)</p>
+        <div class="hero-overlay">
+            <h1>Kost Pondok ashoka</h1>
+            <p>Hunian Nyaman, Aman, dan Strategis (Hanya 15 Menit dari Gerbang Utama Kampus)</p>
+        </div>
     </header>
+
+    <!-- CATATAN SOSIAL PROJECT (DI BAWAH BANNER) -->
+    <div class="project-info-container">
+        <span class="badge-info">
+            Social Project yang dibuat oleh kelompok C++ Mentor: Hiro Faletehan | 
+            Anggota: Icad, Alpi, Ashifa, Cepti, Ihsan, Putri, Reyhan, Nabil, Rayyan, dan Yoga
+        </span>
+    </div>
 
     <div class="container">
         
@@ -101,6 +165,11 @@
         <div class="card">
             <h2>Galeri Foto Kost</h2>
             <div class="gallery-grid">
+                <!-- FOTO DRONE PERTAMA -->
+                <div class="gallery-item">
+                    <img src="1000179078.jpg" alt="Bangunan Kost Tampak Atas Drone">
+                    <div class="caption">Tampak Atas Bangunan Kost</div>
+                </div>
                 <div class="gallery-item">
                     <img src="IMG-20261010-WA0037.jpg" alt="Tampak Depan Kost">
                     <div class="caption">Depan Kost & Gerbang Utama</div>
@@ -134,12 +203,8 @@
                     <div class="caption">Akses Tangga Lantai 2</div>
                 </div>
                 <div class="gallery-item">
-                    <img src="IMG-20261010-WA0046.jpg" alt="Area Jemuran">
+                    <img src="IMG-20261010-WA0045.jpg" alt="Area Jemuran">
                     <div class="caption">Area Jemuran Pakaian</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="IMG-20261010-WA0043.jpg" alt="Jemuran Luar">
-                    <div class="caption">Fasilitas Jemuran Luar</div>
                 </div>
             </div>
         </div>
